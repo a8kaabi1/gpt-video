@@ -34,7 +34,7 @@ export async function POST(req) {
   });
 
   const response = await openai.chat.completions.create({
-    model: "gpt-4-vision-preview",
+    model: "gpt-4o",
     stream: true,
     temperature: 0.5,
     messages: [{ role: "system", content: systemMessage(lang) }].concat(
